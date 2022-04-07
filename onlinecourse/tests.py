@@ -125,7 +125,7 @@ class QuestionTestCase(TestCase):
         )
         self.lesson.save()
         self.question = Question(
-            lesson=self.lesson, question_text="Sample Question 1", grade=2
+            lesson=self.lesson, question_text="Sample Question 1", question_grade=2
         )
         self.question.save()
 
@@ -155,7 +155,7 @@ class ChoiceTestCase(TestCase):
         )
         self.lesson.save()
         self.question = Question(
-            lesson=self.lesson, question_text="Sample Question 1", grade=2
+            lesson=self.lesson, question_text="Sample Question 1", question_grade=2
         )
         self.question.save()
         self.choice = Choice(
